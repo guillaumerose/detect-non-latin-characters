@@ -18,7 +18,7 @@ public class CsvLogger implements Closeable {
 
     public CsvLogger() {
         try {
-            printer = new CSVPrinter(new FileWriter("results.csv"), CSVFormat.DEFAULT.withDelimiter(';'));
+            printer = new CSVPrinter(new FileWriter("results.csv"), CSVFormat.EXCEL);
         }
         catch (IOException e) {
             throw new RuntimeException(e);
